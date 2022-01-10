@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Langs extends Model
+{
+    use HasFactory;
+
+    protected $table = 'languages';
+
+    protected $fillable = [
+        'id',
+        'name',
+        'iso_639_1',
+
+    ];
+}
